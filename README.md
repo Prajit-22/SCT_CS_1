@@ -16,20 +16,7 @@ A user-friendly real-time encryption and decryption application built using Pyth
 - Python 3
 - Tkinter (standard Python library)
 
-4. How to Run
-
-A. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/caesar-cipher-gui.git
-   cd caesar-cipher-gui
-   ```
-
-B. Run the application:
-   ```bash
-   python caesar_cipher_app.py
-   ```
-
-5.  Use Case
+4.  Use Case
 
 Great for educational purposes, demonstrations of basic cryptography, or Python GUI practice.
 
