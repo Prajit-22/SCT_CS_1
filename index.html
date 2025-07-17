@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Cipher - Encrypt & Decrypt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Caesar Cipher</h1>
+            <p>A fun way to encrypt and decrypt messages.</p>
+        </header>
+        <main>
+            <div class="cipher-container">
+                <div class="io-container">
+                    <textarea id="input-text" placeholder="Enter your text here..."></textarea>
+                    <textarea id="output-text" placeholder="Result..." readonly></textarea>
+                </div>
+                <div class="controls">
+                    <div class="shift-container">
+                        <label for="shift-value">Shift Value:</label>
+                        <input type="number" id="shift-value" value="3" min="1" max="25">
+                        <input type="range" id="shift-slider" value="3" min="1" max="25">
+                    </div>
+                    <div class="buttons">
+                        <button id="encrypt-btn">Encrypt</button>
+                        <button id="decrypt-btn">Decrypt</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <button id="help-btn">How does this work?</button>
+            <div class="modal" id="help-modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>How the Caesar Cipher Works</h2>
+                    <p>The Caesar cipher is one of the simplest and most widely known encryption techniques. It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet.</p>
+                    <p>For example, with a left shift of 3, D would be replaced by A, E would become B, and so on. The method is named after Julius Caesar, who used it in his private correspondence.</p>
+                </div>
+            </div>
+             <div class="share-buttons">
+                <button id="copy-btn">Copy to Clipboard</button>
+                <button id="save-btn">Save</button>
+                <button id="load-btn">Load</button>
+                <a id="twitter-share-btn" class="share-btn" href="#" target="_blank"><img src="https://img.icons8.com/color/48/000000/twitter--v1.png" alt="Twitter"></a>
+                <a id="whatsapp-share-btn" class="share-btn" href="#" target="_blank"><img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp"></a>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
